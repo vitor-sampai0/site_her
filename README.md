@@ -1,3 +1,15 @@
+# Convite para Nádia
+
+Projeto React + Vite para convite personalizado.
+
+Instalação e execução:
+
+```bash
+npm install
+npm run dev
+```
+
+Abra `http://localhost:5173` no navegador.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

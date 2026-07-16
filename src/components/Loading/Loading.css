@@ -1,0 +1,2 @@
+.loading-wrap{display:flex;flex-direction:column;gap:1.2rem;align-items:center;justify-content:center;padding:2rem}
+.loading-wrap h3{font-size:1.25rem;color:var(--muted);margin:0}
