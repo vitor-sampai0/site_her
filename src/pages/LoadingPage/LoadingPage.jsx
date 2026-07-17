@@ -9,7 +9,7 @@ export default function LoadingPage(){
   return (
     <div className="loading-page center-wrap">
       <GlassCard className="small">
-        <Loading onFinish={()=> setTimeout(()=> navigate('/comfort'), 300)} />
+        <Loading onFinish={()=> setTimeout(()=> navigate('/message'), 300)} />
       </GlassCard>
     </div>
   )

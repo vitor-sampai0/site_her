@@ -19,7 +19,7 @@ export default function Home(){
     <div className="center-wrap">
       <GlassCard>
         <h1>Olá ❤️</h1>
-        <p className="muted">Antes de continuar, gostaria de saber quem está entrando neste site.</p>
+        <p className="muted">Antes de continuar, gostaria de saber quem está entrando neste site. (digite só seu primeiro nome)</p>
         <form onSubmit={handleEnter} className="home-form">
           <input aria-label="Nome" placeholder="Digite seu nome" value={name} onChange={e=>setName(e.target.value)} />
           <button className="btn" type="submit">Entrar</button>

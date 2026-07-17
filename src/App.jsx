@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Home from './pages/Home/Home'
 import WrongPerson from './pages/WrongPerson/WrongPerson'
 import LoadingPage from './pages/LoadingPage/LoadingPage'
+import Message from './pages/Message/Message'
 import ComfortQuestion from './pages/ComfortQuestion/ComfortQuestion'
 import Invitation from './pages/Invitation/Invitation'
 import Success from './pages/Success/Success'
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/wrong" element={<WrongPerson />} />
             <Route path="/loading" element={<LoadingPage />} />
+            <Route path="/message" element={<Message />} />
             <Route path="/comfort" element={<ComfortQuestion />} />
             <Route path="/invite" element={<Invitation />} />
             <Route path="/success" element={<Success />} />

@@ -2,7 +2,7 @@
 
 Projeto React + Vite para convite personalizado.
 
-Instalação e execução:
+## Local
 
 ```bash
 npm install
@@ -10,7 +10,28 @@ npm run dev
 ```
 
 Abra `http://localhost:5173` no navegador.
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## GitHub Pages
+
+Deploy automático ao fazer push para `main` ou `master`:
+
+1. Faça push do código para o repositório:
+
+```bash
+git add .
+git commit -m "Deploy inicial"
+git branch -M main
+git push -u origin main
+```
+
+2. No repositório GitHub, configure:
+   - **Settings → Pages**
+   - **Source:** Deploy from a branch
+   - **Branch:** `gh-pages` / `/(root)`
+   - Clique em **Save**
+
+3. O site estará disponível em: `https://seu_usuario.github.io/site_for/`
+   This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 

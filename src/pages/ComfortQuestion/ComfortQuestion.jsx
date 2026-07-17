@@ -15,7 +15,8 @@ export default function ComfortQuestion(){
   function no(){
     setMsg('Obrigado por me contar. Quero sempre respeitar como você se sente. Se em algum momento eu fiz você se sentir desconfortável, peço desculpas. Quero conversar sobre isso e entender melhor. ❤️')
     setTimeout(()=>{
-      window.open('https://wa.me/5581998326632?text=Oi!%20Respondi%20que%20n%C3%A3o%20estou%20me%20sentindo%20confort%C3%A1vel%20com%20a%20forma%20como%20estamos%20interagindo.%20Quis%20te%20avisar%20para%20que%20a%20gente%20possa%20conversar%20sobre%20isso.', '_blank')
+      const msg = encodeURIComponent('Na verdade não estou me sentindo muito confortável com a forma como estamos nos relacionando. Precisamos conversar sobre isso com sinceridade. Quer marcar um momento para gente conversar? 💕')
+      window.open(`https://wa.me/5581998326632?text=${msg}`, '_blank')
     },3200)
   }
 

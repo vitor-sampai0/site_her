@@ -11,15 +11,17 @@ export default function Invitation(){
   function accept(){
     setMsg('Você acabou de deixar meu dia muito mais feliz! ❤️')
     setTimeout(()=>{
-      window.open('https://wa.me/5581998326632?text=Oi!%20Eu%20aceito%20o%20convite%20para%20assistir%20ao%20filme%20do%20Homem-Aranha%20com%20você!%20%F0%9F%92%96%F0%9F%98%8A', '_blank')
+      const msg = encodeURIComponent('Sim, eu aceito! Mal posso esperar pelo filme com você! Que legal esse site que você fez. 💖😊🍿')
+      window.open(`https://wa.me/5581998326632?text=${msg}`, '_blank')
       navigate('/success')
     },3000)
   }
 
   function decline(){
-    setMsg('Tudo bem ❤️\nObrigado por responder com sinceridade. Eu respeito totalmente sua decisão. Desejo que você seja muito feliz.')
+    setMsg('Tudo bem ❤️\nObrigado por responder com sinceridade. Eu respeito totalmente sua decisão. Desejo que a gente resolva isso de uma forma saudável e que possamos continuar nos relacionando bem. Se mudar de ideia, é só me chamar! 💖')
     setTimeout(()=>{
-      window.open('https://wa.me/5581998326632?text=Oi!%20Muito%20obrigada%20pelo%20convite.%20Infelizmente%20n%C3%A3o%20vou%20conseguir%20aceitar.%20Mas%20agrade%C3%A7o%20muito%20pelo%20carinho.%20%F0%9F%92%96', '_blank')
+      const msg = encodeURIComponent('não estou preparada para isso, sinto muito 💖')
+      window.open(`https://wa.me/5581998326632?text=${msg}`, '_blank')
       navigate('/success')
     },3000)
   }

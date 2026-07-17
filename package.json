@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint . --ext .js,.jsx",
+    "deploy": "npm run build && echo 'Build concluído para deploy'"
   },
   "dependencies": {
     "framer-motion": "^10.12.6",
