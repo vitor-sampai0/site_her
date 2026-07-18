@@ -1,4 +1,39 @@
 .intro .line{opacity:0;color:var(--muted);animation:fadeIn 1s forwards}
 @keyframes fadeIn{to{opacity:1}}
-.actions{display:flex;gap:1rem;margin-top:1rem}
-.msg{color:var(--muted);white-space:pre-line}
+.date-grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+	gap:1rem;
+	margin-top:1rem;
+}
+
+.date-option{
+	display:flex;
+	flex-direction:column;
+	gap:.5rem;
+	padding:1rem;
+	border-radius:1rem;
+	border:1px solid rgba(255,255,255,.14);
+	background:rgba(255,255,255,.08);
+	color:var(--text);
+	text-align:left;
+	cursor:pointer;
+	transition:transform .2s ease, border-color .2s ease, background .2s ease, opacity .2s ease;
+}
+
+.date-option:hover:not(:disabled){
+	transform:translateY(-2px);
+	border-color:rgba(255,255,255,.28);
+	background:rgba(255,255,255,.12);
+}
+
+.date-option strong{font-size:1rem}
+
+.date-option span{color:var(--muted);line-height:1.4}
+
+.date-option--locked{
+	opacity:.6;
+	cursor:not-allowed;
+}
+
+.msg{color:var(--muted);white-space:pre-line;margin-top:1rem}
