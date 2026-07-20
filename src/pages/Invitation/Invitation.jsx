@@ -8,10 +8,12 @@ export default function Invitation(){
   const [feedback,setFeedback]=useState(null)
   const [selectedId,setSelectedId]=useState(null)
   const [sushiUnlocked,setSushiUnlocked]=useState(false)
+  const [audienceMode,setAudienceMode]=useState('nadia')
   const navigate = useNavigate()
 
   useEffect(()=>{
     setSushiUnlocked(window.localStorage.getItem('sushiUnlocked') === 'true')
+    setAudienceMode(window.localStorage.getItem('siteAudience') || 'nadia')
   },[])
 
   const dateOptions = [
@@ -64,6 +66,12 @@ export default function Invitation(){
 
   return (
     <div className="center-wrap">
+      {audienceMode === 'showing' ? (
+        <div className="invite-warning">
+          <span className="invite-warning__label">AVISO</span>
+          <p>Sai para lá vai, mo vergonha kkkkkkk (a pessoa que vc está mostrando) 👀</p>
+        </div>
+      ) : null}
       <GlassCard>
         <div className="intro">
           <p className="line">Nádia...</p>
